@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/decaracion"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="366dp"
         android:layout_height="383dp"
-        android:background="@color/Propio"
+        android:backgroundTint="@color/material_on_background_disabled"
         app:cardBackgroundColor="#00BCD4"
         app:cardCornerRadius="60dp"
         app:cardElevation="30dp"
@@ -23,6 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/material_on_background_disabled"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -33,9 +34,10 @@
                 android:elegantTextHeight="false"
                 android:fontFamily="serif"
                 android:freezesText="false"
+                android:background="@color/material_on_background_disabled"
                 android:gravity="center"
-                android:text="Home Owner"
-                android:textColor="#070707"
+                android:text="Home Sweet Home"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -48,7 +50,7 @@
                 android:layout_marginBottom="10dp"
                 android:elevation="30dp"
                 android:foregroundGravity="center_vertical|center"
-                app:srcCompat="@drawable/ic_mansion" />
+                app:srcCompat="@drawable/casa" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,7 +66,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Inicie Sesion"
-                    android:textColor="#090909"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -73,7 +75,7 @@
             <LinearLayout
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:background="#00BCD4"
+                android:background="@color/material_on_background_disabled"
                 android:backgroundTint="#00BCD4"
                 android:orientation="horizontal">
 
@@ -82,10 +84,11 @@
                     android:layout_width="147dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#00BCD4"
+                    android:background="@color/material_on_background_disabled"
+                    android:backgroundTint="@color/material_on_background_disabled"
                     android:gravity="center|center_horizontal|center_vertical"
                     android:text="Usuario"
-                    android:textColor="#090909"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -94,10 +97,11 @@
                     android:layout_width="57dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#00BCD4"
+                    android:background="@color/material_on_background_disabled"
+                    android:backgroundTint="@color/material_on_background_disabled"
                     android:gravity="center|center_horizontal|center_vertical"
                     android:text="contraseña"
-                    android:textColor="#090909"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -121,7 +125,8 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:paddingLeft="7dp"
-                    android:paddingRight="7dp" />
+                    android:paddingRight="7dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 <EditText
                     android:id="@+id/etClave"
@@ -133,7 +138,8 @@
                     android:ems="10"
                     android:inputType="textPassword"
                     android:paddingLeft="7dp"
-                    android:paddingRight="7dp" />
+                    android:paddingRight="7dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -149,7 +155,8 @@
                     android:background="@drawable/bordes_botones"
                     android:gravity="center"
                     android:onClick="logueo"
-                    android:text="Ingresar" />
+                    android:text="Ingresar"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -170,7 +177,8 @@
                     android:textColor="#0848D1"
                     android:textIsSelectable="true"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
         </LinearLayout>

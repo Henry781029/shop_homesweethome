@@ -20,6 +20,8 @@ public class screenSplash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_splash);
 
+        getSupportActionBar().hide();
+
         jtvSlogan=findViewById(R.id.tvSlogan);
         jtvTitulo=findViewById(R.id.tvTitulo);
         imagen=findViewById(R.id.imagen);
