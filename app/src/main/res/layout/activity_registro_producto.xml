@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/decaracion4"
     tools:context=".registroProducto">
 
     <ScrollView
         android:layout_width="380dp"
         android:layout_height="715dp"
-        android:background="@color/cardview_light_background"
+        android:background="@color/material_on_background_disabled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -20,12 +21,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cardview_light_background"
+            android:background="@color/material_on_background_disabled"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/material_on_background_disabled"
+                android:backgroundTint="@color/material_on_background_disabled"
                 app:cardBackgroundColor="@color/Propio"
                 app:cardCornerRadius="30dp">
 
@@ -33,6 +36,7 @@
                     android:layout_width="391dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
+                    android:background="@color/material_on_background_disabled"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -40,7 +44,7 @@
                         android:layout_width="391dp"
                         android:layout_height="45dp"
                         android:layout_marginBottom="8dp"
-                        android:background="#0097a7"
+                        android:background="@color/material_on_background_disabled"
                         android:orientation="horizontal"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp">
@@ -51,7 +55,8 @@
                             android:layout_height="45dp"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="Home Owner"
+                            android:text="Home Sweet Home"
+                            android:textColor="@color/design_default_color_error"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -107,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TextView"
-                            android:textColor="#F6F0F0"
+                            android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -115,7 +120,7 @@
                             android:id="@+id/imageView4"
                             android:layout_width="88dp"
                             android:layout_height="94dp"
-                            app:srcCompat="@drawable/ic_owner_house" />
+                            app:srcCompat="@drawable/casa" />
 
                         <TextView
                             android:id="@+id/textView33"
@@ -123,8 +128,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             android:gravity="center"
-                            android:text="Ingresar Apartamento"
-                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:text="Ingresar Producto"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -142,8 +147,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            android:text="País:"
-                            android:textColor="#0B0B0B"
+                            android:text="Nombre Producto:"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -157,7 +162,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:paddingLeft="10dp"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -173,8 +179,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            android:text="Ciudad"
-                            android:textColor="#0B0B0B"
+                            android:text="Categoria"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -188,7 +194,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:paddingLeft="10dp"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -204,8 +211,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            android:text="Dirección:"
-                            android:textColor="#0B0B0B"
+                            android:text="Shop:"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -219,7 +226,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:paddingLeft="10dp"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -240,8 +248,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:text="# Habitaciones:"
-                                android:textColor="#0B0B0B"
+                                android:text="Stock:"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -254,7 +262,8 @@
                                 android:background="@drawable/bordes_textos"
                                 android:ems="10"
                                 android:inputType="textPersonName"
-                                android:paddingLeft="10dp" />
+                                android:paddingLeft="10dp"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
 
@@ -270,8 +279,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
-                                android:text="Precio por noche:"
-                                android:textColor="#0B0B0B"
+                                android:text="Precio:"
+                                android:textColor="@color/white"
                                 android:textSize="17sp"
                                 android:layout_marginRight="10dp" />
 
@@ -285,7 +294,8 @@
                                 android:background="@drawable/bordes_textos"
                                 android:ems="10"
                                 android:inputType="textPersonName"
-                                android:paddingLeft="10dp" />
+                                android:paddingLeft="10dp"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -302,7 +312,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="Descripción:"
-                            android:textColor="#0B0B0B"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -316,7 +326,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:paddingLeft="10dp"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -335,15 +346,17 @@
                             android:background="@drawable/bordes_botones"
                             android:gravity="center"
                             android:onClick="CrearApto"
-                            android:text="Crear" />
+                            android:text="Crear"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                         <Button
                             android:id="@+id/btnRegresar"
                             android:layout_width="130dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/bordes_botones"
-                            android:onClick="re"
-                            android:text="Regresar" />
+                            android:onClick="Regresar"
+                            android:text="Regresar"
+                            tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
                 </LinearLayout>

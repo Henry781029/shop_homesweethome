@@ -48,7 +48,7 @@
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:text="Registro home sweet home"
-                        android:textColor="#EFECEC"
+                        android:textColor="@color/design_default_color_error"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="Nombre completo:"
-                            android:textColor="#0B0B0B"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -105,7 +105,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="E-mail (Usuario):"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -136,7 +136,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="Pais:"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -168,7 +168,7 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Ciudad:"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -200,7 +200,7 @@
                             android:layout_weight="1"
                             android:gravity="center|left"
                             android:text="Rol:"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <RadioGroup
@@ -213,6 +213,7 @@
                                 android:layout_width="107dp"
                                 android:layout_height="20dp"
                                 android:text="Usuario"
+                                android:textColor="@color/white"
                                 tools:ignore="TouchTargetSizeCheck" />
 
                             <RadioButton
@@ -222,6 +223,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:checked="true"
                                 android:text="Vendedor"
+                                android:textColor="@color/white"
                                 tools:ignore="TouchTargetSizeCheck" />
 
                         </RadioGroup>
@@ -241,7 +243,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="Contraseña:"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText
@@ -271,7 +273,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:text="Confirmar contraseña:"
-                            android:textColor="#070707"
+                            android:textColor="@color/white"
                             android:textSize="17sp" />
 
                         <EditText

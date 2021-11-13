@@ -31,13 +31,13 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/material_on_background_disabled"
                 android:elegantTextHeight="false"
                 android:fontFamily="serif"
                 android:freezesText="false"
-                android:background="@color/material_on_background_disabled"
                 android:gravity="center"
                 android:text="Home Sweet Home"
-                android:textColor="@color/white"
+                android:textColor="@color/design_default_color_error"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 

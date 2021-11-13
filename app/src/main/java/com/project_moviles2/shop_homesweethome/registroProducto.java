@@ -38,6 +38,8 @@ public class registroProducto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_producto);
 
+        getSupportActionBar().hide();
+
         jtvRol= findViewById(R.id.tvRol);
         jtvNombre=findViewById(R.id.tvNombre);
         jtvEmail=findViewById(R.id.tvEmail);
@@ -130,7 +132,7 @@ public class registroProducto extends AppCompatActivity {
         }
 
 
-        DocumentReference docRef = db2.collection("Apartaments").document(owner);
+        DocumentReference docRef = db2.collection("Products").document(owner);
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
