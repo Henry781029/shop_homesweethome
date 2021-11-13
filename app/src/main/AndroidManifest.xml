@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shop_homesweethome">
         <activity
+            android:name=".VerProductosGuardados"
+            android:exported="false" />
+        <activity
+            android:name=".Vendedor"
+            android:exported="false" />
+        <activity
+            android:name=".usuario"
+            android:exported="false" />
+        <activity
+            android:name=".screenSplash"
+            android:exported="false" />
+        <activity
+            android:name=".registroProducto"
+            android:exported="false" />
+        <activity
+            android:name=".registro_User"
+            android:exported="false" />
+        <activity
+            android:name=".editarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".actualizarVendedor"
+            android:exported="false" />
+        <activity
             android:name=".actualizarUsuario"
             android:exported="false" />
         <activity

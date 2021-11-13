@@ -16,6 +16,17 @@
         <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_sol2.xml" value="0.3671875" />
         <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_visitor_home.xml" value="0.3671875" />
         <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_actualizar_usuario.xml" value="0.33" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_actualizar_vendedor.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_editar_producto.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_main.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_registro_producto.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_registro_user.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_screen_splash.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_usuario.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_vendedor.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_ver_productos_guardados.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/product_list.xml" value="0.2667572463768116" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/product_list_usuario.xml" value="0.2667572463768116" />
       </map>
     </option>
   </component>

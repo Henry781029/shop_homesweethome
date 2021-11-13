@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerProductosGuardados">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="375dp"
+                    android:layout_height="675dp"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    app:cardBackgroundColor="@color/Propio"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/Logo"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@color/Propio"
+                                android:orientation="horizontal"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="608dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Home Owner"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="336dp"
+                                    android:layout_height="41dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_mansion" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#0097a7"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/usuario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#0097a7"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp">
+
+                                    <TextView
+                                        android:id="@+id/etNombre"
+                                        android:layout_width="239dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="#0097a7"
+                                        android:foregroundTint="#020202"
+                                        android:text="TextView"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rol"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#0097a7"
+                                        android:gravity="right"
+                                        android:text="TextView"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/Opciones"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#0097a7  "
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="176dp"
+                                        android:layout_height="75dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="11dp"
+                                        android:layout_weight="1"
+                                        android:foreground="@drawable/ic_visitor_home"
+                                        app:srcCompat="@drawable/ic_sol" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView18"
+                                            android:layout_width="111dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/bordes_textos"
+                                            android:gravity="center"
+                                            android:onClick="regresar"
+                                            android:text="Regresar"
+                                            android:textColor="#050505"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold|italic" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvFirestoreApartamentsList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

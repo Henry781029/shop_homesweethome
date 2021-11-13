@@ -22,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class actualizarUsuario extends AppCompatActivity {
+public class actualizarVendedor extends AppCompatActivity {
 
     CheckBox jcbhabilidar;
     EditText jetClaveActual,jetClaveNueva,jetClaveNueva2,jetNombre1,jetPais,jetCiudad;
@@ -35,7 +35,7 @@ public class actualizarUsuario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actualizar_usuario);
+        setContentView(R.layout.activity_actualizar_vendedor);
 
         //getActionBar().hide();
 
@@ -47,11 +47,9 @@ public class actualizarUsuario extends AppCompatActivity {
         jetPais=findViewById(R.id.etPais);
         jetCiudad=findViewById(R.id.etCiudad);
 
-        email=getIntent().getStringExtra("usuario");
-        password=getIntent().getStringExtra("password");
-        rol=getIntent().getStringExtra("rol");
+        email=getIntent().getStringExtra("coleccion");
 
-        DocumentReference docRef = db.collection("users").document(getIntent().getStringExtra("usuario"));
+        DocumentReference docRef = db.collection("users").document(getIntent().getStringExtra("coleccion"));
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -62,7 +60,6 @@ public class actualizarUsuario extends AppCompatActivity {
                         String nombre=document.getString("Name");
                         String pais=document.getString("Country");
                         String ciudad=document.getString("City");
-
 
 
                         jetNombre1.setText(nombre);
@@ -100,6 +97,8 @@ public class actualizarUsuario extends AppCompatActivity {
         rol=getIntent().getStringExtra("rol");
         password=getIntent().getStringExtra("password");
 
+
+
         final String country,city,name,passwordOld,passw1,passw2,passwordNew;
 
         name=jetNombre1.getText().toString();
@@ -112,7 +111,7 @@ public class actualizarUsuario extends AppCompatActivity {
 
 
 
-
+        Map<String, Object> user = new HashMap<>();
 
         if (jcbhabilidar.isChecked()) {
 
@@ -124,9 +123,7 @@ public class actualizarUsuario extends AppCompatActivity {
             }
             else {
 
-
                 if (passwordOld.equals(password)) {
-
 
                     if (!passw1.equals(passw2)) {
 
@@ -139,7 +136,6 @@ public class actualizarUsuario extends AppCompatActivity {
                         jetClaveNueva.requestFocus();
 
                     } else {
-                        Map<String, Object> user = new HashMap<>();
                         user.put("Password", passw1);
                         user.put("Country",country );
                         user.put("Name", name);
@@ -148,15 +144,15 @@ public class actualizarUsuario extends AppCompatActivity {
 
 
 
-                        db.collection("users").document(getIntent().getStringExtra("usuario"))
+                        db.collection("users").document(getIntent().getStringExtra("coleccion"))
                                 .set(user)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
                                         Toast.makeText(getApplicationContext(),"Datos actualizados",Toast.LENGTH_SHORT).show();
 
-                                        Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
-                                        intent.putExtra("usuario",email);
+                                        Intent intent= new Intent(getApplicationContext(),Usuario_invitado_Activity.class);
+                                        intent.putExtra("coleccion",email);
                                         intent.putExtra("rol",rol);
                                         intent.putExtra("password",password);
                                         startActivity(intent);
@@ -171,38 +167,33 @@ public class actualizarUsuario extends AppCompatActivity {
 
                     }
 
-
                 } else {
                     Toast.makeText(getApplicationContext(), "Contraseña incorrecta",
                             Toast.LENGTH_LONG).show();
-
                     jetClaveActual.setText("");
                     jetClaveActual.requestFocus();
-
 
                 }
 
             }
 
-
         }else{
-            Map<String, Object> user = new HashMap<>();
+
             user.put("Country",country );
             user.put("Name", name);
             user.put("City", city);
             user.put("Rol", rol);
             user.put("Password", password);
 
-
-            db.collection("users").document(getIntent().getStringExtra("usuario"))
+            db.collection("users").document(getIntent().getStringExtra("coleccion"))
                     .set(user)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
                             Toast.makeText(getApplicationContext(),"Datos actualizados",Toast.LENGTH_SHORT).show();
 
-                            Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
-                            intent.putExtra("usuario",email);
+                            Intent intent= new Intent(getApplicationContext(),Usuario_invitado_Activity.class);
+                            intent.putExtra("coleccion",email);
                             intent.putExtra("rol",rol);
                             intent.putExtra("password",password);
                             startActivity(intent);
@@ -218,6 +209,50 @@ public class actualizarUsuario extends AppCompatActivity {
 
         }
 
+
+      /*  if (jcbhabilidar.isChecked()){
+
+            if(passwordOld.isEmpty()||passw1.isEmpty()||passw2.isEmpty()){
+
+                Toast.makeText(getApplicationContext(),"Los campos: 'Contraseña actual','Nueva contraseña'" +
+                                "y 'Confirmación nueva contraseña' deben ser diligenciados"
+                        ,Toast.LENGTH_LONG).show();
+
+            }
+            else {
+                if (passwordOld.equals(password)) {
+                    if (!passw1.equals(passw2)) {
+
+                        Toast.makeText(getApplicationContext(), "Clave nueva y confirmación no coinciden"
+                                , Toast.LENGTH_LONG).show();
+
+                        jetClaveNueva.setText("");
+                        jetClaveNueva2.setText("");
+
+                        jetClaveNueva.requestFocus();
+
+                    } else {
+                        user.put("Password", passw1);
+
+                    }
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Contraseña incorrecta",
+                            Toast.LENGTH_LONG);
+                    jetClaveActual.setText("");
+                    jetClaveActual.requestFocus();
+
+
+                }
+
+
+            }
+
+         }
+         else{
+
+            user.put("Password", password);
+        }*/
 
     }
 

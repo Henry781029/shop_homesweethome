@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".registro_User">
+
+    <ScrollView
+        android:layout_width="356dp"
+        android:layout_height="703dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:background="@color/light"
+                android:backgroundTint="@color/Propio"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="15dp"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Propio"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Registro home Owner"
+                        android:textColor="#EFECEC"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="128dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/ic_mansion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="229dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="Nombre completo:"
+                            android:textColor="#0B0B0B"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etNombre"
+                            android:layout_width="257dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="193dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="E-mail (Usuario):"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="257dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="194dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="Pais:"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etPais"
+                            android:layout_width="257dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:hint="Country"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="207dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Ciudad:"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etCiudad"
+                            android:layout_width="255dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:hint="City"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="232dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="Rol:"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <RadioGroup
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RadioButton
+                                android:id="@+id/rbInvitado"
+                                android:layout_width="107dp"
+                                android:layout_height="20dp"
+                                android:text="Invitado"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/rbAnfitrion"
+                                android:layout_width="112dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:checked="true"
+                                android:text="Anfitrión"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="207dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="Contraseña:"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etClaveActual"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="207dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="Confirmar contraseña:"
+                            android:textColor="#070707"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/etClaveNueva"
+                            android:layout_width="249dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_textos"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnActualizar"
+                            android:layout_width="113dp"
+                            android:layout_height="38dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bordes_botones"
+                            android:gravity="center"
+                            android:onClick="Registrar"
+                            android:text="Registrarse"
+                            android:textAllCaps="false"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
