@@ -152,7 +152,7 @@ public class editarProducto extends AppCompatActivity {
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getApplicationContext(),"Apartamento actualizado",Toast.LENGTH_SHORT).show();
 
-                        Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+                        Intent intent= new Intent(getApplicationContext(),Vendedor.class);
                         intent.putExtra("coleccion",owner);
                         startActivity(intent);
                     }
@@ -171,7 +171,7 @@ public class editarProducto extends AppCompatActivity {
     public void regresar (View view){
         String owner=jtvtvEmail.getText().toString();
 
-        Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+        Intent intent= new Intent(getApplicationContext(),Vendedor.class);
         intent.putExtra("coleccion",owner);
         startActivity(intent);
 

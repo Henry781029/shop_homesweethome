@@ -155,7 +155,7 @@ public class actualizarUsuario extends AppCompatActivity {
                                     public void onSuccess(Void aVoid) {
                                         Toast.makeText(getApplicationContext(),"Datos actualizados",Toast.LENGTH_SHORT).show();
 
-                                        Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+                                        Intent intent= new Intent(getApplicationContext(),Vendedor.class);
                                         intent.putExtra("usuario",email);
                                         intent.putExtra("rol",rol);
                                         intent.putExtra("password",password);
@@ -201,7 +201,7 @@ public class actualizarUsuario extends AppCompatActivity {
                         public void onSuccess(Void aVoid) {
                             Toast.makeText(getApplicationContext(),"Datos actualizados",Toast.LENGTH_SHORT).show();
 
-                            Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+                            Intent intent= new Intent(getApplicationContext(),Vendedor.class);
                             intent.putExtra("usuario",email);
                             intent.putExtra("rol",rol);
                             intent.putExtra("password",password);

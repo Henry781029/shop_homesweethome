@@ -133,7 +133,7 @@ public class registro_User extends AppCompatActivity {
                         DocumentSnapshot document = task.getResult();
                         if (document.exists()) {
 
-                            AlertDialog.Builder builder = new AlertDialog.Builder(RegistroActivity.this);
+                            AlertDialog.Builder builder = new AlertDialog.Builder(registro_User.this);
                             builder.setTitle("Usuario ya existe.");
                             builder.setMessage("Deseas iniciar Sesion con:\n "+email+"?")
                                     .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
@@ -184,7 +184,7 @@ public class registro_User extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
                                             Log.d("Registro ok", "DocumentSnapshot successfully written!");
                                             Toast.makeText(getApplicationContext(),"Usuario resgistrado correctamente",Toast.LENGTH_LONG).show();
-                                            Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+                                            Intent intent= new Intent(getApplicationContext(),Vendedor.class);
 
 
 
@@ -225,7 +225,7 @@ public class registro_User extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Usuario Registrado Correctamente", Toast.LENGTH_SHORT).show();
 
                         } else {
-                            Toast.makeText(RegistroActivity.this,"no funciona esta mierda",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(registro_User.this,"no funciona esta mierda",Toast.LENGTH_SHORT).show();
 
                         }
                     }

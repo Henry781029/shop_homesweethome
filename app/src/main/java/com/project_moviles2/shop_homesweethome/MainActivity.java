@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                                 String rol = document.getString("Rol");
                                 if (rol.equals("Anfitrion")){
 
-                                    Intent intent = new Intent(getApplicationContext(), UsuarioActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), Vendedor.class);
                                     intent.putExtra("coleccion", usuario);
                                     intent.putExtra("rol", rol);
                                     intent.putExtra("password", password);
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
                                 else if (rol.equals("Invitado")){
-                                    Intent intent = new Intent(getApplicationContext(), Usuario_invitado_Activity.class);
+                                    Intent intent = new Intent(getApplicationContext(), usuario.class);
                                     intent.putExtra("coleccion", usuario);
                                     intent.putExtra("rol", rol);
                                     intent.putExtra("password", password);
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void irRegistro (View view){
 
-        Intent intent= new Intent(getApplicationContext(),RegistroActivity.class);
+        Intent intent= new Intent(getApplicationContext(),registro_User.class);
         startActivity(intent);
 
     }

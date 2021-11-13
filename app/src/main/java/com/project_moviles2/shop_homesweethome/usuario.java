@@ -88,9 +88,9 @@ public class usuario extends AppCompatActivity {
 
 
 
-        adapter= new FirestoreRecyclerAdapter<ProductoModelo, UsuarioActivity.ApartamentsViewHolder>(options) {
+        adapter= new FirestoreRecyclerAdapter<ProductoModelo, Vendedor.ProductViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull UsuarioActivity.ApartamentsViewHolder holder, int position, @NonNull ProductoModelo model) {
+            protected void onBindViewHolder(@NonNull Vendedor.ProductViewHolder holder, int position, @NonNull ProductoModelo model) {
 
                 holder.tvPais.setText(model.getCountry());
                 holder.tvciudad.setText(model.getCity());
@@ -106,7 +106,7 @@ public class usuario extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        AlertDialog.Builder builder = new AlertDialog.Builder(Usuario_invitado_Activity.this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(usuario.this);
                         builder.setTitle("Reservar Apartamento.");
                         builder.setMessage("Deesea Reservar este Apartamento?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
@@ -142,11 +142,11 @@ public class usuario extends AppCompatActivity {
 
             @NonNull
             @Override
-            public UsuarioActivity.ApartamentsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.apartament_list_invitado1,parent,false);
+            public Vendedor.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.product_list_usuario,parent,false);
 
 
-                return new UsuarioActivity.ApartamentsViewHolder(view);
+                return new Vendedor.ProductViewHolder(view);
             }
         };
 
@@ -190,7 +190,7 @@ public class usuario extends AppCompatActivity {
     public void irAptosReservados(View view){
 
         Intent intent= new Intent(getApplicationContext(),
-                verAtptosReservadosMainActivity.class);
+                VerProductosGuardados.class);
         intent.putExtra("usuario",email);
 
         startActivity(intent);
@@ -201,7 +201,7 @@ public class usuario extends AppCompatActivity {
     public void actualizarDatos (View view){
 
         Intent intent= new Intent(getApplicationContext(),
-                actualizarUsuarioInvitadoMainActivity.class);
+                actualizarUsuario.class);
         intent.putExtra("usuario",email);
         intent.putExtra("password",password);
 

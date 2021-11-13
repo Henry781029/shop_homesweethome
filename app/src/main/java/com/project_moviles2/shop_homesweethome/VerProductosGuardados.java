@@ -76,12 +76,12 @@ public class VerProductosGuardados extends AppCompatActivity {
 
                     } else {
                         Log.d("no encuentra", "No such document");
-                        Toast.makeText(verAtptosReservadosMainActivity.this, "No encuentra usuario", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VerProductosGuardados.this, "No encuentra usuario", Toast.LENGTH_SHORT).show();
 
                     }
                 } else {
                     Log.d("Mensaje3", "get failed with ", task.getException());
-                    Toast.makeText(verAtptosReservadosMainActivity.this, "No encuentra coleccion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(VerProductosGuardados.this, "No encuentra coleccion", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -91,9 +91,9 @@ public class VerProductosGuardados extends AppCompatActivity {
         FirestoreRecyclerOptions<ProductoModelo> options= new FirestoreRecyclerOptions.Builder<ProductoModelo>()
                 .setQuery(query, ProductoModelo.class).build();
 
-        adapter= new FirestoreRecyclerAdapter<ApartamentosModelo, UsuarioActivity.ApartamentsViewHolder>(options) {
+        adapter= new FirestoreRecyclerAdapter<ProductoModelo, Vendedor.ProductViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull UsuarioActivity.ApartamentsViewHolder holder, int position, @NonNull ApartamentosModelo model) {
+            protected void onBindViewHolder(@NonNull Vendedor.ProductViewHolder holder, int position, @NonNull ProductoModelo model) {
 
                 holder.tvPais.setText(model.getCountry());
                 holder.tvciudad.setText(model.getCity());
@@ -109,7 +109,7 @@ public class VerProductosGuardados extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        AlertDialog.Builder builder = new AlertDialog.Builder(verAtptosReservadosMainActivity.this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(VerProductosGuardados.this);
                         builder.setTitle("Reservar Apartamento.");
                         builder.setMessage("Deesea Descartar este Apartamento?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
@@ -143,11 +143,11 @@ public class VerProductosGuardados extends AppCompatActivity {
 
             @NonNull
             @Override
-            public UsuarioActivity.ApartamentsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.apartament_list_invitado1,parent,false);
+            public Vendedor.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.product_list_usuario,parent,false);
 
 
-                return new UsuarioActivity.ApartamentsViewHolder(view);
+                return new Vendedor.ProductViewHolder(view);
             }
         };
 
@@ -191,7 +191,7 @@ public class VerProductosGuardados extends AppCompatActivity {
 
     public void regresar(View view){
 
-        Intent intent= new Intent(verAtptosReservadosMainActivity.this,Usuario_invitado_Activity.class);
+        Intent intent= new Intent(VerProductosGuardados.this,usuario.class);
         //  intent.putExtra("usuario",email);
         //  intent.putExtra("rol",rol);
         // intent.putExtra("password",password);

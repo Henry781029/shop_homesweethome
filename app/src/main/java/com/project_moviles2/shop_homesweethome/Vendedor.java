@@ -113,7 +113,7 @@ public class Vendedor extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        AlertDialog.Builder builder = new AlertDialog.Builder(UsuarioActivity.this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Vendedor.this);
                         builder.setTitle("Eliminar Apartamento.");
                         builder.setMessage("Seguro que desea eliminar el Apartamento?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
@@ -135,7 +135,7 @@ public class Vendedor extends AppCompatActivity {
                 holder.jbtnEditar.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent= new Intent(UsuarioActivity.this,editarAptoActivity.class);
+                        Intent intent= new Intent(Vendedor.this,editarProducto.class);
                         intent.putExtra("id",id);
 
                         startActivity(intent);
@@ -157,7 +157,7 @@ public class Vendedor extends AppCompatActivity {
             @NonNull
             @Override
             public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.apartament_list,parent,false);
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.product_list,parent,false);
 
 
                 return new ProductViewHolder (view);
@@ -193,7 +193,7 @@ public class Vendedor extends AppCompatActivity {
 
     public void ir_registro_apto(View view){
 
-        Intent intent= new Intent(getApplicationContext(),RegistroAptoActivity.class);
+        Intent intent= new Intent(getApplicationContext(),registroProducto.class);
         intent.putExtra("coleccion",email);
         startActivity(intent);
 
@@ -227,7 +227,7 @@ public class Vendedor extends AppCompatActivity {
 
 
 
-        Intent intent= new Intent(UsuarioActivity.this, acutalizarUsuarioAnfitrionActivity.class);
+        Intent intent= new Intent(Vendedor.this, actualizarVendedor.class);
         intent.putExtra("coleccion",email);
         intent.putExtra("rol",rol);
         intent.putExtra("password",password);

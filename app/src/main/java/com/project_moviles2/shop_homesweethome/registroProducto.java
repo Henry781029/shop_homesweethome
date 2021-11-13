@@ -81,7 +81,7 @@ public class registroProducto extends AppCompatActivity {
 
     public void Regresar(View view){
 
-        Intent intent= new Intent(getApplicationContext(),UsuarioActivity.class);
+        Intent intent= new Intent(getApplicationContext(),Vendedor.class);
 
         startActivity(intent);
 
