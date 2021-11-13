@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "888033787491",
+    "project_id": "shop-homesweethome",
+    "storage_bucket": "shop-homesweethome.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888033787491:android:5b3d35c48bbc8c68c08256",
+        "android_client_info": {
+          "package_name": "com.project_moviles2.shop_homesweethome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888033787491-p0l7o3bum70a7s2ceg9aue7er3i8k0rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6rGAXk77DYB2nWAwKsRXFhYNahYHp9TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888033787491-p0l7o3bum70a7s2ceg9aue7er3i8k0rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
