@@ -164,10 +164,10 @@ public class registro_User extends AppCompatActivity {
 
 
                             if (jrbAnfitrion.isChecked()) {
-                                user.put("Rol", "Anfitrion");
+                                user.put("Rol", "Vendedor");
 
                             } else if (jrbInvitado.isChecked()) {
-                                user.put("Rol", "Invitado");
+                                user.put("Rol", "Usuario");
 
                             }
 

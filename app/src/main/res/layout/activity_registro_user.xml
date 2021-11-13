@@ -212,7 +212,7 @@
                                 android:id="@+id/rbInvitado"
                                 android:layout_width="107dp"
                                 android:layout_height="20dp"
-                                android:text="Invitado"
+                                android:text="Usuario"
                                 tools:ignore="TouchTargetSizeCheck" />
 
                             <RadioButton
@@ -221,7 +221,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="5dp"
                                 android:checked="true"
-                                android:text="Anfitrión"
+                                android:text="Vendedor"
                                 tools:ignore="TouchTargetSizeCheck" />
 
                         </RadioGroup>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/decaracion2"
     tools:context=".actualizarUsuario">
 
     <ScrollView
@@ -29,8 +30,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="302dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/light"
-                    android:backgroundTint="@color/Propio"
+                    android:background="@color/material_on_background_disabled"
+                    android:backgroundTint="@color/material_on_background_disabled"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="15dp"
                     app:contentPadding="10dp">
@@ -38,7 +39,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/Propio"
+                        android:background="@color/material_on_background_disabled"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -60,7 +61,7 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="20dp"
-                            app:srcCompat="@drawable/ic_visitor_home" />
+                            app:srcCompat="@drawable/programador" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -75,7 +76,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
                                 android:text="Nombre completo:"
-                                android:textColor="#0B0B0B"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -89,7 +90,8 @@
                                 android:hint="Name"
                                 android:inputType="textPersonName"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -111,7 +113,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
                                 android:text="Pais:"
-                                android:textColor="#070707"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -125,7 +127,8 @@
                                 android:hint="Country"
                                 android:inputType="textPersonName"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -142,7 +145,7 @@
                                 android:layout_weight="1"
                                 android:gravity="left"
                                 android:text="Ciudad:"
-                                android:textColor="#070707"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -156,7 +159,8 @@
                                 android:hint="City"
                                 android:inputType="textPersonName"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -172,7 +176,9 @@
                                 android:layout_weight="1"
                                 android:backgroundTint="#121212"
                                 android:onClick="habilitarCambioPasword"
-                                android:text="Actualizar contraseña" />
+                                android:text="Actualizar contraseña"
+                                android:textColor="@color/white"
+                                tools:ignore="TouchTargetSizeCheck" />
 
                         </LinearLayout>
 
@@ -189,7 +195,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
                                 android:text="Contraseña actual:"
-                                android:textColor="#070707"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -203,7 +209,8 @@
                                 android:enabled="false"
                                 android:inputType="textPassword"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -219,7 +226,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
                                 android:text="Nueva contraseña:"
-                                android:textColor="#070707"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -233,7 +240,8 @@
                                 android:enabled="false"
                                 android:inputType="textPassword"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -250,7 +258,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
                                 android:text="Confirmar nueva contraseña:"
-                                android:textColor="#070707"
+                                android:textColor="@color/white"
                                 android:textSize="17sp" />
 
                             <EditText
@@ -264,7 +272,8 @@
                                 android:enabled="false"
                                 android:inputType="textPassword"
                                 android:paddingLeft="10dp"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
 
@@ -283,8 +292,9 @@
                                 android:background="@drawable/bordes_botones"
                                 android:gravity="center"
                                 android:onClick="actualizarAfitrion"
-                                android:text="Actualizar"
-                                android:textAllCaps="false" />
+                                android:text="ACTUALIZAR"
+                                android:textAllCaps="false"
+                                tools:ignore="TouchTargetSizeCheck" />
 
                             <Button
                                 android:id="@+id/button"
@@ -292,7 +302,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:background="@drawable/bordes_botones"
-                                android:text="Regresar" />
+                                android:text="Regresar"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </LinearLayout>
 
                     </LinearLayout>
