@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/decaracion2"
     tools:context=".registro_User">
 
     <ScrollView
         android:layout_width="356dp"
         android:layout_height="703dp"
         android:foregroundGravity="center"
+        android:background="@color/material_on_background_disabled"
+        android:backgroundTint="@color/material_on_background_disabled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,14 +21,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/material_on_background_disabled"
             android:gravity="center"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="302dp"
                 android:layout_height="wrap_content"
-                android:background="@color/light"
-                android:backgroundTint="@color/Propio"
+                android:background="@color/material_on_background_disabled"
+                android:backgroundTint="@color/material_on_background_disabled"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="15dp"
                 app:contentPadding="10dp">
@@ -34,7 +37,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/Propio"
+                    android:background="@color/material_on_background_disabled"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -44,7 +47,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Registro home Owner"
+                        android:text="Registro home sweet home"
                         android:textColor="#EFECEC"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -56,7 +59,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
-                        app:srcCompat="@drawable/ic_mansion" />
+                        app:srcCompat="@drawable/casa" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -293,7 +296,7 @@
 
                         <Button
                             android:id="@+id/btnActualizar"
-                            android:layout_width="113dp"
+                            android:layout_width="118dp"
                             android:layout_height="38dp"
                             android:layout_weight="1"
                             android:background="@drawable/bordes_botones"
