@@ -28,7 +28,7 @@
                 android:layout_width="397dp"
                 android:layout_height="22dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_apartamento" />
+                app:srcCompat="@drawable/casa" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="Pais:"
+                    android:text="Nombre:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="Ciudad:"
+                    android:text="Categoria:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Dirección:"
+                android:text="Shop:"
                 android:textStyle="bold" />
 
             <TextView
@@ -130,7 +130,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="# Habitaciones:"
+                    android:text="Stock:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="$x noche:"
+                    android:text="Precio:"
                     android:textStyle="bold" />
 
                 <TextView

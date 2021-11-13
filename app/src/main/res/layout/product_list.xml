@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
     android:layout_margin="5dp"
+    android:background="@drawable/decaracion"
     android:layout_marginLeft="5dp"
     app:cardCornerRadius="15dp"
     app:cardElevation="40dp">
@@ -29,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_apartamento" />
+                app:srcCompat="@drawable/casa" />
 
         </LinearLayout>
 
@@ -49,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="Pais:"
+                    android:text="Nombre:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -71,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="Ciudad:"
+                    android:text="Categoria:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -95,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Dirección:"
+                android:text="Shop:"
                 android:textStyle="bold" />
 
             <TextView
@@ -132,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="# Habitaciones:"
+                    android:text="Stock:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -153,7 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="$ x noche:"
+                    android:text="Precio:"
                     android:textStyle="bold" />
 
                 <TextView
@@ -229,7 +231,8 @@
                         android:gravity="right"
                         android:text="TextView"
                         android:textAlignment="viewStart"
-                        android:textColor="#070707" />
+                        android:textColor="#070707"
+                        tools:ignore="RtlCompat" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
@@ -243,7 +246,7 @@
             <Button
                 android:id="@+id/btnEliminar"
                 android:layout_width="149dp"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/bordes_botones"
                 android:text="Eliminar" />
@@ -251,7 +254,7 @@
             <Button
                 android:id="@+id/btnEditar"
                 android:layout_width="149dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/bordes_botones"
                 android:text="Editar" />
         </LinearLayout>
