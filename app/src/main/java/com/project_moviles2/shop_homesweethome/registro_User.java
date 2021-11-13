@@ -186,8 +186,6 @@ public class registro_User extends AppCompatActivity {
                                             Toast.makeText(getApplicationContext(),"Usuario resgistrado correctamente",Toast.LENGTH_LONG).show();
                                             Intent intent= new Intent(getApplicationContext(),Vendedor.class);
 
-
-
                                             intent.putExtra("coleccion",email);
                                             startActivity(intent);
 
