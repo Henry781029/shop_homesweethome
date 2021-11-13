@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/bordes_botones.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/bordes_textos.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_apartamento.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_house.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_house_blue.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_mansion.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_nubes.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_nubes__1_.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_owner_house.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_sol.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_sol2.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/drawable/ic_visitor_home.xml" value="0.3671875" />
+        <entry key="..\:/DESARROLLO DE SOFTWARE/shop_homesweethome/app/src/main/res/layout/activity_actualizar_usuario.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

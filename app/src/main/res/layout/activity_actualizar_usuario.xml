@@ -6,4 +6,300 @@
     android:layout_height="match_parent"
     tools:context=".actualizarUsuario">
 
+    <ScrollView
+        android:layout_width="374dp"
+        android:layout_height="693dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="389dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light"
+                    android:backgroundTint="@color/Propio"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="15dp"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Propio"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="Actualizar datos"
+                            android:textColor="#EFECEC"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="128dp"
+                            android:layout_height="105dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            app:srcCompat="@drawable/ic_visitor_home" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="229dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Nombre completo:"
+                                android:textColor="#0B0B0B"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etNombre"
+                                android:layout_width="257dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:hint="Name"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="194dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Pais:"
+                                android:textColor="#070707"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etPais"
+                                android:layout_width="257dp"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:hint="Country"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="207dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="Ciudad:"
+                                android:textColor="#070707"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etCiudad"
+                                android:layout_width="255dp"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:hint="City"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cbhabilitar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#121212"
+                                android:onClick="habilitarCambioPasword"
+                                android:text="Actualizar contraseña" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="207dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Contraseña actual:"
+                                android:textColor="#070707"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etClaveActual"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:inputType="textPassword"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="207dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Nueva contraseña:"
+                                android:textColor="#070707"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etClaveNueva"
+                                android:layout_width="249dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:inputType="textPassword"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Confirmar nueva contraseña:"
+                                android:textColor="#070707"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/etClaveNueva2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_textos"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:inputType="textPassword"
+                                android:paddingLeft="10dp"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnActualizar"
+                                android:layout_width="122dp"
+                                android:layout_height="38dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_botones"
+                                android:gravity="center"
+                                android:onClick="actualizarAfitrion"
+                                android:text="Actualizar"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button"
+                                android:layout_width="116dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bordes_botones"
+                                android:text="Regresar" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
