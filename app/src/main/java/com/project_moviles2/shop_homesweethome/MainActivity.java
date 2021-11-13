@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
+
         jtvRegistrarse=findViewById(R.id.tvRegistrarse);
         jetUsuario=findViewById(R.id.etUsuario);
         jetClave=findViewById(R.id.etClave);

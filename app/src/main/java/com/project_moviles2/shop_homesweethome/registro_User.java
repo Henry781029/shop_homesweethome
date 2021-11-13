@@ -42,6 +42,8 @@ public class registro_User extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_user);
 
+        getSupportActionBar().hide();
+
         jetnombre=findViewById(R.id.etNombre);
         jetEmail=findViewById(R.id.etEmail);
         jetPais=findViewById(R.id.etPais);
@@ -184,7 +186,7 @@ public class registro_User extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
                                             Log.d("Registro ok", "DocumentSnapshot successfully written!");
                                             Toast.makeText(getApplicationContext(),"Usuario resgistrado correctamente",Toast.LENGTH_LONG).show();
-                                            Intent intent= new Intent(getApplicationContext(),Vendedor.class);
+                                            Intent intent= new Intent(getApplicationContext(),registro_User.class);
 
                                             intent.putExtra("coleccion",email);
                                             startActivity(intent);
