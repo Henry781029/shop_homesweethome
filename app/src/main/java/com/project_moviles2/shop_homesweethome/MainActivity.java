@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                             if (password.equals(clave)) {
                                 String rol = document.getString("Rol");
-                                if (rol.equals("Anfitrion")){
+                                if (rol.equals("Vendedor")){
 
                                     Intent intent = new Intent(getApplicationContext(), Vendedor.class);
                                     intent.putExtra("coleccion", usuario);
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(intent);
 
                                 }
-                                else if (rol.equals("Invitado")){
+                                else if (rol.equals("Usuario")){
                                     Intent intent = new Intent(getApplicationContext(), usuario.class);
                                     intent.putExtra("coleccion", usuario);
                                     intent.putExtra("rol", rol);

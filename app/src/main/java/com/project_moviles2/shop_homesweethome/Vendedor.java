@@ -114,8 +114,8 @@ public class Vendedor extends AppCompatActivity {
                     public void onClick(View v) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(Vendedor.this);
-                        builder.setTitle("Eliminar Apartamento.");
-                        builder.setMessage("Seguro que desea eliminar el Apartamento?")
+                        builder.setTitle("Eliminar Producto.");
+                        builder.setMessage("Seguro que desea eliminar este Producto?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -209,7 +209,7 @@ public class Vendedor extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(getApplicationContext(),"Apartamento eliminado",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Producto eliminado",Toast.LENGTH_SHORT).show();
 
 
                     }
@@ -217,7 +217,7 @@ public class Vendedor extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(getApplicationContext(),"Error al eliminnar Apartamento",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Error al eliminnar Producto",Toast.LENGTH_SHORT).show();
                     }
                 });
 

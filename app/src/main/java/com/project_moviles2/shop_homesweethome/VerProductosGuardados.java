@@ -110,8 +110,8 @@ public class VerProductosGuardados extends AppCompatActivity {
                     public void onClick(View v) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(VerProductosGuardados.this);
-                        builder.setTitle("Reservar Apartamento.");
-                        builder.setMessage("Deesea Descartar este Apartamento?")
+                        builder.setTitle("Descartar Producto.");
+                        builder.setMessage("Deesea Descartar este Producto?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -125,7 +125,7 @@ public class VerProductosGuardados extends AppCompatActivity {
 
                                         db.collection("Apartaments").document(id).update(reserva);
 
-                                        Toast.makeText(getApplicationContext(),"DescartadoApartamento"
+                                        Toast.makeText(getApplicationContext(),"Producto Descartado"
                                                 ,Toast.LENGTH_LONG).show();
 
                                     }

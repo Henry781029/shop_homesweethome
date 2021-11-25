@@ -107,8 +107,8 @@ public class usuario extends AppCompatActivity {
                     public void onClick(View v) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(usuario.this);
-                        builder.setTitle("Reservar Apartamento.");
-                        builder.setMessage("Deesea Reservar este Apartamento?")
+                        builder.setTitle("Adquirir Producto.");
+                        builder.setMessage("Deesea adquirir el producto?")
                                 .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -122,7 +122,7 @@ public class usuario extends AppCompatActivity {
 
 
                                         db.collection("Apartaments").document(id).update(reserva);
-                                        Toast.makeText(getApplicationContext(),"Apartamento reservado"
+                                        Toast.makeText(getApplicationContext(),"Producto Adquirido"
                                                 ,Toast.LENGTH_LONG).show();
 
                                     }
@@ -207,6 +207,14 @@ public class usuario extends AppCompatActivity {
 
         startActivity(intent);
 
+
+    }
+
+    public void salir (View view){
+
+        Intent intent= new Intent(usuario.this,MainActivity.class);
+
+        startActivity(intent);
 
     }
 }

@@ -154,6 +154,19 @@
                                             android:textSize="18sp"
                                             android:textStyle="bold|italic"
                                             tools:ignore="TouchTargetSizeCheck" />
+                                        <TextView
+                                            android:id="@+id/tvfacturar"
+                                            android:layout_width="111dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/bordes_textos"
+                                            android:gravity="center"
+                                            android:text="Facturar"
+                                            android:textColor="#050505"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold|italic"
+                                            tools:ignore="TouchTargetSizeCheck" />
 
                                     </LinearLayout>
 

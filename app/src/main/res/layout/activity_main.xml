@@ -76,7 +76,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:background="@color/material_on_background_disabled"
-                android:backgroundTint="#00BCD4"
+               android:backgroundTint="@color/material_on_background_disabled"
                 android:orientation="horizontal">
 
                 <TextView
