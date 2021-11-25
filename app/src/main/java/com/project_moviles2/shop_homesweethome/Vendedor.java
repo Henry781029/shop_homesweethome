@@ -249,4 +249,12 @@ public class Vendedor extends AppCompatActivity {
         adapter.stopListening();
     }
 
+    public void salir (View view){
+
+        Intent intent= new Intent(Vendedor.this,MainActivity.class);
+
+        startActivity(intent);
+
+    }
+
 }

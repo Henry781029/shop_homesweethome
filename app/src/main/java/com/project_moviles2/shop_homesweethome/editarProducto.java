@@ -150,7 +150,7 @@ public class editarProducto extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(getApplicationContext(),"Apartamento actualizado",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Producto actualizado",Toast.LENGTH_SHORT).show();
 
                         Intent intent= new Intent(getApplicationContext(),Vendedor.class);
                         intent.putExtra("coleccion",owner);
